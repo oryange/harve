@@ -1,8 +1,8 @@
-# Guia de Git e Linux
+# Curso Harve
 
-Este repositório contém guias práticos e didáticos sobre Git e Linux, criados para facilitar o aprendizado e uso dessas ferramentas essenciais.
+Este repositório contém guias práticos e didáticos sobre os módulos do curso Harve os quais sou facilitadora, criados para facilitar o aprendizado e uso dessas ferramentas essenciais.
 
-## Conteúdo
+## Módulo Git
 
 - [Configuração do GitHub](modulo-git/configuracao-github.md)
   - Instalação do Git
@@ -22,15 +22,5 @@ Este repositório contém guias práticos e didáticos sobre Git e Linux, criado
   - Explicações amigáveis
   - Exemplos de uso real
 
-## Como Usar
-
-Cada guia está organizado de forma clara e objetiva, com:
-- Comandos listados de forma organizada
-- Explicações simples e diretas
-- Exemplos práticos
-- Dicas úteis
-
-## Contribuições
-
-Contribuições são bem-vindas! Se você encontrar algum erro ou quiser sugerir melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+## Módulo Framework
 
