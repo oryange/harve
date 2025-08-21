@@ -24,3 +24,4 @@ Este repositório contém guias práticos e didáticos sobre os módulos do curs
 
 ## Módulo Framework
 
+- [Ecommerce React App](https://github.com/oryange/harve/tree/main/modulo-framework/ecommerce)
