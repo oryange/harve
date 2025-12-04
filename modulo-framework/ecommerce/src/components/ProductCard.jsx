@@ -3,16 +3,25 @@ import { Card, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { ContextCart } from "../hooks/ContextCart";
 
-export default function ProductCard({id, name, price, description, image }) {
+export default function ProductCard({ id, name, price, description, image }) {
     const { addToCart } = useContext(ContextCart);
 
-    function handleAddToCart(id, name, price, description, image) {
+    function handleAddToCart() {
         const token = localStorage.getItem('token');
         if (!token) {
             navigate('/login');
             return;
         }
-        addToCart(id, name, price, description, image);
+
+        const product = {
+            id,
+            name,
+            price,
+            description,
+            image
+        };
+
+        addToCart(product);
     }
     const navigate = useNavigate();
 
@@ -37,7 +46,7 @@ export default function ProductCard({id, name, price, description, image }) {
                 <Button
                     variant="primary"
                     className="mt-auto"
-                    onClick={() => handleAddToCart(id, name, price, description, image)}
+                    onClick={handleAddToCart}
                 >
                     Adicionar ao Carrinho
                 </Button>

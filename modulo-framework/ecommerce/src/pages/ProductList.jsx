@@ -8,24 +8,24 @@ import { getProducts } from "../service/productService";
 export default function ProductList() {
     const [products, setProducts] = useState([]);
 
-    const showErrorMessage = (msg) => {
-        toast.error(msg, {
-            position: "top-center",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            theme: "colored",
-        });
-    }
+    // const showErrorMessage = (msg) => {
+    //     toast.error(msg, {
+    //         position: "top-center",
+    //         autoClose: 5000,
+    //         hideProgressBar: false,
+    //         closeOnClick: true,
+    //         pauseOnHover: true,
+    //         draggable: true,
+    //         theme: "colored",
+    //     });
+    // }
 
     const loadProductList = async () => {
         try {
-            const products = await getProducts();
-            setProducts(products);
+            const productsAPI = await getProducts();
+            setProducts(productsAPI);
         } catch (error) {
-            showErrorMessage("Erro ao buscar os produtos")
+            //showErrorMessage("Erro ao buscar os produtos")
         }
     };
 

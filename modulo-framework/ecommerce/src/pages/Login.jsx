@@ -94,6 +94,7 @@ function Login() {
                                     variant="primary"
                                     type="submit"
                                     className="w-100"
+                                    onClick={handleSubmit}
                                     >
                                     Entrar
                                 </Button>

@@ -25,7 +25,7 @@ function ContextCartProvider({ children }) {
     localStorage.setItem("cart_products", productList);
   }
 
-  const addToCart = async (product) => {
+  const addToCart = (product) => {
     const productsInCart = cartProductList.filter(
       (item) => item.id == product.id
     );
