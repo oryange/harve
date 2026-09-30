@@ -78,7 +78,7 @@ ssh-keygen -t ed25519 -C "seuemail@exemplo.com"
 Durante a execução:
 
 - **"Enter file in which to save the key"** → aperte **Enter** para usar o local padrão.
-- **"Enter passphrase"** → digite uma senha para proteger a chave (recomendado) ou aperte **Enter** para deixar sem. Os caracteres não aparecem enquanto você digita, isso é normal.
+- **"Enter passphrase"** → aperte **Enter** para deixar sem senha.
 
 Se estiver usando um sistema antigo (sem suporte a Ed25519), use:
 
